@@ -24,7 +24,11 @@ class Program
                 Console.WriteLine("Goodbye!");
                 break; 
             }
-
+            if (choice < 0 || choice > 5)
+            {
+                Console.WriteLine("Invalid choice! Please enter a number from 0 to 5.");
+                continue; 
+            }
             Console.WriteLine("Please enter 1st number:");
             int a = int.Parse(Console.ReadLine()!);
 
