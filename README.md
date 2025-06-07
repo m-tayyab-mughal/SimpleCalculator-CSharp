@@ -25,13 +25,25 @@ Welcome!
 3 = Multiplication
 4 = Division
 5 = Modulus
-Please select an operation by entering the corresponding number (1-5):
+0 = Exit
+Please select an operation by entering the corresponding number (0-5):
 1
 Please enter 1st number:
 10
 Please enter 2nd number:
 5
 The sum of 10 and 5 is 15.
+
+Welcome!
+1 = Sum
+2 = Subtraction
+3 = Multiplication
+4 = Division
+5 = Modulus
+0 = Exit
+Please select an operation by entering the corresponding number (0-5):
+0
+Goodbye!
 ## GitHub
 
 [https://github.com/m-tayyab-mughal/SimpleCalculator-CSharp](https://github.com/m-tayyab-mughal/SimpleCalculator-CSharp)
