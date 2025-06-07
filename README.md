@@ -34,4 +34,4 @@ Please enter 2nd number:
 The sum of 10 and 5 is 15.
 ## GitHub
 
-[https://github.com/YOUR_USERNAME/SimpleCalculator-CSharp](https://github.com/YOUR_USERNAME/SimpleCalculator-CSharp)
+[https://github.com/m-tayyab-mughal/SimpleCalculator-CSharp](https://github.com/m-tayyab-mughal/SimpleCalculator-CSharp)
