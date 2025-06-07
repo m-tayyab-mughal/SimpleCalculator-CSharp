@@ -17,23 +17,41 @@ class Program
             Console.WriteLine("0 = Exit");
             Console.WriteLine("Please select an operation by entering the corresponding number (0-5):");
 
-            choice = int.Parse(Console.ReadLine()!);
+            // Safe input for choice
+            if (!int.TryParse(Console.ReadLine(), out choice))
+            {
+                Console.WriteLine("Invalid input! Please enter a number from 0 to 5.");
+                continue;
+            }
 
             if (choice == 0)
             {
                 Console.WriteLine("Goodbye!");
-                break; 
+                break;
             }
             if (choice < 0 || choice > 5)
             {
                 Console.WriteLine("Invalid choice! Please enter a number from 0 to 5.");
-                continue; 
+                continue;
             }
-            Console.WriteLine("Please enter 1st number:");
-            int a = int.Parse(Console.ReadLine()!);
 
+            // Safe input for first number
+            Console.WriteLine("Please enter 1st number:");
+            int a;
+            if (!int.TryParse(Console.ReadLine(), out a))
+            {
+                Console.WriteLine("Invalid input! Please enter a valid number.");
+                continue;
+            }
+
+            // Safe input for second number
             Console.WriteLine("Please enter 2nd number:");
-            int b = int.Parse(Console.ReadLine()!);
+            int b;
+            if (!int.TryParse(Console.ReadLine(), out b))
+            {
+                Console.WriteLine("Invalid input! Please enter a valid number.");
+                continue;
+            }
 
             int result = 0;
 
@@ -71,25 +89,21 @@ class Program
         } while (true);
     }
 
-    // Addition Function
     static int ADD(int a, int b)
     {
         return a + b;
     }
 
-    // Subtraction Function
     static int SUB(int a, int b)
     {
         return a - b;
     }
 
-    // Multiplication Function
     static int MUL(int a, int b)
     {
         return a * b;
     }
 
-    // Division Function
     static int DIV(int a, int b)
     {
         if (b == 0)
@@ -100,7 +114,6 @@ class Program
         return a / b;
     }
 
-    // Modulus Function
     static int MOD(int a, int b)
     {
         if (b == 0)
